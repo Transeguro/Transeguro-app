@@ -95,3 +95,7 @@ Las interfaces se encuentran en el documento de PROTOTIPO.
 --------------------
 
 Si se desea observar el proyecto en acción, ingresar al rar PROYECTO INSO 2.
+
+***AGRADECIMIENTOS DE PLANTILLA
+ ------------------------
+ +https://github.com/DiegoOruna/InsoII.git
