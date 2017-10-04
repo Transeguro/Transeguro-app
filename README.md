@@ -71,7 +71,6 @@ El acceso detallado a los requerimientos, junto con las tareas de cada programad
 ***Clonación del Proyecto***
 --------------------
  
-`$ git clone https://github.com/DiegoOruna/InsoII.git`
 
 ***Interfaces***
 --------------------
