@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.transeguro.transeguroapp.rutas">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_gradient"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:textColor="#FFF"
+        android:text="RUTAS DE LA EMPRESA"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/textView7" />
+
+
+    <Button
+        android:id="@+id/pr"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_left" />
+
+    <Button
+        android:id="@+id/nx"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@mipmap/ic_lright"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffff"
+        android:layout_below="@+id/textView7">
+
+        <ImageSwitcher
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imgsw">
+
+
+        </ImageSwitcher>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

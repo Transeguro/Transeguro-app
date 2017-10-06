@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.transeguro.transeguroapp.Login">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <ImageView
+       android:background="@drawable/background_gradient"
+       android:layout_weight="1"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"/>
+
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+         />
+
+</LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="60dp"
+        android:paddingTop="30dp"
+        android:textColor="#FFF"
+        android:text="LOGIN"
+        android:textSize="55dp"
+
+        android:drawablePadding="10dp"
+        android:textStyle="bold"/>
+
+<LinearLayout
+    android:layout_marginTop="30dp"
+    android:id="@+id/layoutInput"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:background="#ffffff"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/impcorreo">
+
+    <EditText
+        android:id="@+id/txtcorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:drawableRight="@drawable/ic_person"
+        android:hint="Ingrese su correo" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imppassword">
+    <EditText
+        android:id="@+id/txtpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="20dp"
+        android:drawableRight="@drawable/ic_remove_red_eye_black_24dp"
+        android:hint="Ingrese su contraseña"
+        android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:textSize="20sp"
+        android:textColor="#FFF"
+        android:background="@drawable/rec_gradient"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="true"
+        android:id="@+id/btningresar"
+        android:text="Ingresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+       />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Registrese aquí"
+        android:id="@+id/tvregistrese"
+        android:layout_above="@id/layoutInput"
+        android:textAlignment="center"
+        android:textColor="#09008d"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
+
+</RelativeLayout>
+
+

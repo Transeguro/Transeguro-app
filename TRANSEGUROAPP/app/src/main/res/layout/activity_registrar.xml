@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.transeguro.transeguroapp.registrar">
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:background="@drawable/semicirculo"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="60dp"
+        android:paddingTop="20dp"
+        android:textColor="#FFF"
+        android:text=" REGISTRO"
+        android:textSize="48dp"
+        android:drawableRight="@mipmap/ic_reg"
+        android:drawablePadding="10dp"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_marginTop="110dp"
+        android:id="@+id/layoutInput"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:background="#ffffff"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USUARIO"
+            android:textStyle="bold" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/impcorreo">
+        <EditText
+            android:textSize="16dp"
+            android:drawablePadding="20dp"
+            android:id="@+id/txtcorreo"
+            android:hint="Ingrese su Correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imppassword">
+        <EditText
+            android:textSize="16dp"
+            android:drawablePadding="20dp"
+            android:id="@+id/txtpassword"
+            android:hint="Ingrese su Contraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+        </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="INFORMACIÓN"
+            android:textStyle="bold" />
+
+        <EditText
+            android:textSize="16dp"
+            android:drawablePadding="20dp"
+            android:hint="Ingrese su Nombre"
+            android:id="@+id/txtnombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:textSize="16dp"
+            android:drawablePadding="20dp"
+            android:hint="Ingrese su Apellido"
+            android:id="@+id/txtapellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/impedad">
+        <EditText
+            android:textSize="16dp"
+            android:drawablePadding="20dp"
+            android:hint="Ingrese su Edad"
+            android:id="@+id/txtedad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/impdni">
+        <EditText
+            android:textSize="16dp"
+            android:drawablePadding="20dp"
+            android:hint="Ingrese su DNI"
+            android:id="@+id/txtdni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:textSize="20sp"
+            android:textColor="#FFF"
+            android:background="@drawable/rec_gradient"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="true"
+            android:id="@+id/btnregistrar"
+            android:text="Registrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+

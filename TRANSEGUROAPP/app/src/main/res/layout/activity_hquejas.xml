@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.transeguro.transeguroapp.hquejas">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:background="@drawable/background_gradient"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="60dp"
+        android:paddingTop="40dp"
+        android:textColor="#FFF"
+        android:text=" QUEJAS"
+        android:textSize="40dp"
+        android:drawableRight="@mipmap/ic_lol"
+        android:drawablePadding="10dp"
+        android:textStyle="bold"
+        android:id="@+id/textView9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:id="@+id/layoutInput"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:background="#FFFF"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvasunto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="20dp"
+            android:text= "ASUNTO:"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvasunto2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="20dp"
+            android:text="Falta de respeto por parte del conductor." />
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:background="#FFFF"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="20dp"
+            android:layout_marginLeft="0dp"
+            android:text="FECHA DE QUEJA:"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvfecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:drawablePadding="20dp"
+            android:text="14/08/23" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:id="@+id/layoutInput4"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:background="#FFFF"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="116dp"
+            android:drawablePadding="20dp"
+            android:text="IMAGENES ADJUNTAS"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="278dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:background="#FFFF"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout6">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="20dp"
+            android:layout_marginLeft="0dp"
+            android:text="CONDUCTOR:"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvDFDF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:drawablePadding="20dp"
+            android:text="Acosta Canto Rodrigo Jaime"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="338dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:background="#FFFF"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout7">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="20dp"
+            android:layout_marginLeft="0dp"
+            android:text="PLACA:"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:drawablePadding="20dp"
+            android:text="AC344"/>
+
+
+    </LinearLayout> <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="398dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="false"
+    android:background="#FFFF"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout8">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="20dp"
+        android:layout_marginLeft="0dp"
+        android:text="PLACA:"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvdes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:drawablePadding="20dp"
+        android:hint="Acosta Canto Rodrigo Jaime" />
+</LinearLayout> <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="398dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="false"
+    android:background="#FFFF"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout9">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="20dp"
+        android:layout_marginLeft="0dp"
+        android:text="DESCRIPCIÓN"
+        android:textStyle="bold"/>
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvdesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:drawablePadding="20dp"
+        android:text="El conductor del micro no espero a que bajara para arrancar"/>
+</ScrollView></LinearLayout> <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="474dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="false"
+    android:background="#FFFF"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout10">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="20dp"
+        android:layout_marginLeft="0dp"
+        android:text="CATEGORÍA"
+        android:textStyle="bold"/>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvcat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:drawablePadding="20dp"
+            android:text="Conducta inapropiada"/>
+    </ScrollView></LinearLayout>
+</RelativeLayout>
+
+
+
+

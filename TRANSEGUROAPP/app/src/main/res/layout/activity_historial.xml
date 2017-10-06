@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.transeguro.transeguroapp.registrar_sugerencias">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:background="@drawable/background_gradient"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="60dp"
+        android:paddingTop="40dp"
+        android:textColor="#FFF"
+        android:text=" HISTORIAL"
+        android:textSize="40dp"
+        android:drawableRight="@mipmap/ic_hist"
+        android:drawablePadding="10dp"
+        android:textStyle="bold"/>
+
+        <Button
+            android:textSize="40sp"
+            android:textColor="#274b86"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:background="#FFFFFF"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="true"
+            android:id="@+id/btn_hquejas"
+            android:text="QUEJAS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            />
+
+    <Button
+        android:textSize="40sp"
+        android:textColor="#FFF"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@drawable/background_gradient"
+        android:layout_marginTop="360dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textAllCaps="true"
+        android:id="@+id/btn_hsugerencias"
+        android:text="SUGERENCIAS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        />
+
+
+</RelativeLayout>

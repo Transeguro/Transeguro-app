@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.transeguro.transeguroapp.registro_quejas3">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:background="@drawable/background_gradient"
+            android:layout_weight="0.41"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="10dp"
+        android:paddingBottom="60dp"
+        android:paddingTop="30dp"
+        android:text="REGISTRO DE QUEJA"
+
+        android:textAlignment="center"
+
+        android:textColor="#FFF"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/layoutInput"
+        android:background="#ffffff"
+        android:padding="50dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/impdescripcion3">
+
+                <EditText
+                    android:id="@+id/txtdescripcion3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="50dp"
+                    android:hint="DESCRIPCIÓN PROBLEMA"
+                    android:textStyle="bold"
+                    android:inputType="textMultiLine"
+                    android:paddingBottom="180dp" />
+            </android.support.design.widget.TextInputLayout>
+
+        </ScrollView>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/impfecha">
+            <EditText
+                android:id="@+id/txtfecha"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingTop="14dp"
+                android:drawablePadding="20dp"
+                android:inputType="date"
+                android:textStyle="bold"
+                android:hint="FECHA DE LO OCURRIDO"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:textSize="20sp"
+            android:textColor="#FFF"
+            android:background="@drawable/rec_gradient"
+            android:layout_marginTop="40dp"
+            android:textAllCaps="true"
+            android:id="@+id/btnregistrarqueja"
+            android:text="REGISTRAR QUEJA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

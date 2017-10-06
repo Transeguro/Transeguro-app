@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>Login.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,128); font-weight: bold; }
+.s1 { color: rgb(0,0,0); }
+.s2 { color: rgb(128,128,128); font-style: italic; }
+.s3 { color: rgb(0,128,0); font-weight: bold; }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+Login.java</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">package </span><span class="s1">com.example.transeguro.transeguroapp; 
+ 
+</span><span class="s0">import </span><span class="s1">android.content.Intent; 
+</span><span class="s0">import </span><span class="s1">android.database.Cursor; 
+</span><span class="s0">import </span><span class="s1">android.database.SQLException; 
+</span><span class="s0">import </span><span class="s1">android.media.MediaCodec; 
+</span><span class="s0">import </span><span class="s1">android.support.design.widget.TextInputLayout; 
+</span><span class="s0">import </span><span class="s1">android.support.v7.app.AppCompatActivity; 
+</span><span class="s0">import </span><span class="s1">android.os.Bundle; 
+</span><span class="s0">import </span><span class="s1">android.util.Patterns; 
+</span><span class="s0">import </span><span class="s1">android.view.View; 
+</span><span class="s0">import </span><span class="s1">android.widget.Button; 
+</span><span class="s0">import </span><span class="s1">android.widget.EditText; 
+</span><span class="s0">import </span><span class="s1">android.widget.TextView; 
+</span><span class="s0">import </span><span class="s1">android.widget.Toast; 
+ 
+</span><span class="s0">import </span><span class="s1">java.util.regex.Pattern; 
+ 
+</span><span class="s0">public class </span><span class="s1">Login </span><span class="s0">extends </span><span class="s1">AppCompatActivity { 
+ 
+    EditText txtpassword, txtcorreo; 
+    TextInputLayout impcorreo, imppassword; 
+    TextView tvregistrese; 
+    Button btningresar; 
+ 
+    Boolean Cor=</span><span class="s0">false</span><span class="s1">, pas=</span><span class="s0">false</span><span class="s1">; 
+    @Override 
+    </span><span class="s0">protected void </span><span class="s1">onCreate(Bundle savedInstanceState) { 
+        </span><span class="s0">super</span><span class="s1">.onCreate(savedInstanceState); 
+        setContentView(R.layout.activity_login); 
+ 
+        txtcorreo = (EditText)findViewById(R.id.txtcorreo); 
+        txtpassword = (EditText)findViewById(R.id.txtpassword); 
+        impcorreo = (TextInputLayout)findViewById(R.id.impcorreo); 
+        imppassword = (TextInputLayout)findViewById(R.id.imppassword); 
+ 
+</span><span class="s2">//METODO PARA CONECTAR TVREGISTRESE CON CLASE REGISTRAR</span><span class="s1"> 
+        tvregistrese=(TextView)findViewById(R.id.tvregistrese); 
+        tvregistrese.setOnClickListener(</span><span class="s0">new </span><span class="s1">View.OnClickListener(){ 
+            @Override 
+            </span><span class="s0">public void </span><span class="s1">onClick(View v){ 
+                Intent i=</span><span class="s0">new </span><span class="s1">Intent(Login.</span><span class="s0">this</span><span class="s1">,registrar.</span><span class="s0">class</span><span class="s1">); 
+                Login.</span><span class="s0">this</span><span class="s1">.startActivity(i); 
+ 
+            } 
+        }); 
+ 
+</span><span class="s2">//METODO PARA CONECTAR BOTON INGRESAR CON LA CLASE MENU</span><span class="s1"> 
+        btningresar=(Button)findViewById(R.id.btningresar); 
+        btningresar.setOnClickListener(</span><span class="s0">new </span><span class="s1">View.OnClickListener() 
+        { 
+            @Override 
+            </span><span class="s0">public void </span><span class="s1">onClick(View v) 
+            { 
+ 
+           </span><span class="s0">if</span><span class="s1">(Patterns.EMAIL_ADDRESS.matcher(txtcorreo.getText().toString()).matches()==</span><span class="s0">false</span><span class="s1">) 
+           { 
+           impcorreo.setError(</span><span class="s3">&quot;Correo Invalido.Debe ser usuario@correo.com&quot;</span><span class="s1">); 
+           Cor=</span><span class="s0">false</span><span class="s1">; 
+           } 
+ 
+           </span><span class="s0">else</span><span class="s1"> 
+           { 
+           Cor=</span><span class="s0">true</span><span class="s1">; 
+           impcorreo.setError(</span><span class="s0">null</span><span class="s1">); 
+           } 
+ 
+           Pattern p = Pattern.compile(</span><span class="s3">&quot;[0-9][0-9][0-9][0-9][0-9]&quot;</span><span class="s1">); 
+           </span><span class="s0">if</span><span class="s1">(p.matcher(txtpassword.getText().toString()).matches()==</span><span class="s0">false</span><span class="s1">) 
+           { 
+               imppassword.setError(</span><span class="s3">&quot;Password inválido. Debe contener solo 5 dígitos numéricos&quot;</span><span class="s1">); 
+               pas = </span><span class="s0">false</span><span class="s1">; 
+           } 
+           </span><span class="s0">else</span><span class="s1"> 
+               { 
+                   pas=</span><span class="s0">true</span><span class="s1">; 
+                   imppassword.setError(</span><span class="s0">null</span><span class="s1">); 
+               } 
+ 
+         </span><span class="s0">if</span><span class="s1">(Cor==</span><span class="s0">true </span><span class="s1">&amp;&amp; pas==</span><span class="s0">true</span><span class="s1">) 
+          { 
+             String usu=txtcorreo.getText().toString(); 
+             String clave =txtpassword.getText().toString(); 
+ 
+             </span><span class="s0">if</span><span class="s1">(usu.matches(</span><span class="s3">&quot;[a-zA-Z0-9._-]+@[a-z]+.[a-z]+&quot;</span><span class="s1">)) 
+             { 
+                 Intent i= </span><span class="s0">new </span><span class="s1">Intent(getApplicationContext(),Menu.</span><span class="s0">class</span><span class="s1">); 
+                 startActivity(i); 
+             } 
+ 
+             </span><span class="s0">else</span><span class="s1"> 
+                 { 
+                 Toast.makeText(getApplicationContext(),</span><span class="s3">&quot;Usuario o Password Incorrectos&quot;</span><span class="s1">, 
+                         Toast.LENGTH_SHORT).show(); 
+                 } 
+          } 
+ 
+            } 
+ 
+        }); 
+    } 
+    } 
+ 
+</span></pre>
+</body>
+</html>
