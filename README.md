@@ -4,16 +4,16 @@ Sistema de Gestión de Quejas y Sugerencias de Transporte
 Este proyecto ha sido desarrollado para el curso de **INGENIERIA DE SOFTWARE II**, a cargo de **Henry Mendoza Puerta**, docente de la Universidad Privada Antenor Orrego
 
 Integrantes:
-+ Flores Horna, Renzo
-+ Garnique Sanchez, Eduardo
-+ Mendoza Anhuaman, Jorge
-+ Mendoza Garcia, Diego
-+ Peña Pastrana, Christine
-+ Trujillano Quispe, Edwin
++ Flores Horna, Renzo  ........Android
++ Garnique Sanchez, Eduardo...Página web
++ Mendoza Anhuaman, Jorge.....Página web
++ Mendoza Garcia, Diego.......Android
++ Peña Pastrana, Christine....Android
++ Trujillano Quispe, Edwin....Página web
 
 **Introducción al Proyecto**
 --------------------
-El presente proyecto se desarrolló para realizar un sistema que permita la gestión de quejas y sugerencias de los usuarios de una empresa de transporte específica, a traves de una aplicación móvil y un sistema eb, aplicando los conocimientos adquiridos en el curso de Ingeniería de Software II.
+El presente proyecto se desarrolló para realizar un sistema que permita la gestión de quejas y sugerencias de los usuarios de una empresa de transporte específica, a traves de una aplicación móvil y un sistema web, aplicando los conocimientos adquiridos en el curso de Ingeniería de Software II.
 
 Se analizó el problema presente en la atención de las quejas y sugerencias que los usuarios brindaban a cierta empresa de transporte y que eran desatendidas por falta de organización y para mejorarla se desarrolló el proyecto teniendo en cuenta los requerimientos exigidos por el cliente, modelando una interfaz funcional para cada uno de los requerimientos
 
@@ -65,37 +65,46 @@ Foro:
 
 
 
-El acceso detallado a los requerimientos, junto con las tareas de cada programador, se encuentran en el documento HISTORIAS Y TAREAS.
+El acceso detallado a los requerimientos, junto con las tareas de cada programador, se encuentran en el documento **HISTORIAS Y TAREAS**.
 
 
 ***Clonación del Proyecto***
 --------------------
- 
+`<? $ git clone https://github.com/Transeguro/Transeguro-app.git ?>`
 
 ***Interfaces***
 --------------------
 Las interfaces se encuentran en el documento de PROTOTIPO.
+Y los iconos usados en el documento ICONOS.
+
 
 ***¿Como Funciona?***
 --------------------
 
-- Una vez que se entra al login se pedira un correo y contraseña para poder acceder al menú, tambien permite registrar tu cuenta para poder acceder a la aplicación. Con el usuario creado la aplicación te permite regitrar quejas, sugerencias respecto a la empresa, asi como revisar el historial de quejas y el foro, donde se puede ver datos de la empresa, e informacion de las quejas y sugerencias.
+- Una vez que se entra al login se pedira un correo y contraseña para poder acceder al menú, tambien permite registrar tu cuenta para poder acceder a la aplicación. Con el usuario creado, la aplicación te permite regitrar quejas, sugerencias respecto a la empresa, asi como revisar el historial de quejas y el foro, donde se puede ver datos de la empresa, e informacion de las quejas y sugerencias.
   
+- Usuario predefinido para pruebas es : rfh0701@hotmail.com 
+- pswd: Malgg246 
+
+
 ***Tecnologias Utilizadas***
 --------------------
 
-  + Android Studio, Java, SQLLite
+  + Android Studio Nexos 5 Api 23, Java, SQLLite
   + Lenguaje de Programacion: HTML
+  
   
  ***Metodologia***
 --------------------
  + XP
+ 
   
 ***¿Como accedo al proyecto?***
 --------------------
+Si se desea observar el proyecto en acción, descargar el proyecto APP MÓVIL.
 
-Si se desea observar el proyecto en acción, ingresar al rar PROYECTO INSO 2.
 
-***AGRADECIMIENTOS DE PLANTILLA
+
+**AGRADECIMIENTOS DE PLANTILLA
  ------------------------
  +https://github.com/DiegoOruna/InsoII.git
