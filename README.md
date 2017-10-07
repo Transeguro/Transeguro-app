@@ -4,12 +4,13 @@ Sistema de Gestión de Quejas y Sugerencias de Transporte
 Este proyecto ha sido desarrollado para el curso de **INGENIERIA DE SOFTWARE II**, a cargo de **Henry Mendoza Puerta**, docente de la Universidad Privada Antenor Orrego
 
 Integrantes:
-+ Flores Horna, Renzo  ........Android
-+ Garnique Sanchez, Eduardo...Página web
-+ Mendoza Anhuaman, Jorge.....Página web
-+ Mendoza Garcia, Diego.......Android
-+ Peña Pastrana, Christine....Android
-+ Trujillano Quispe, Edwin....Página web
++ Flores Horna, Renzo 
++ Garnique Sanchez, Eduardo
++ Mendoza Anhuaman, Jorge
++ Mendoza Garcia, Diego
++ Peña Pastrana, Christine
++ Trujillano Quispe, Edwin
+
 
 **Introducción al Proyecto**
 --------------------
@@ -72,9 +73,29 @@ El acceso detallado a los requerimientos, junto con las tareas de cada programad
 --------------------
 `<? $ git clone https://github.com/Transeguro/Transeguro-app.git ?>`
 
+
 ***Interfaces***
 --------------------
 Las interfaces se encuentran en el documento de PROTOTIPO.
+
+ +<a href="https://ibb.co/d9qZqb">Principal</a><br>
+ +<a href="https://ibb.co/fUaLDw">Login</a><br>
+ +<a href="https://ibb.co/mqpxtw">Registro</a><br>
+ +<a href="https://ibb.co/g6LgLb">Perfil1</a><br>
+ +<a href="https://ibb.co/ix4fDw">Perfil2</a><br>
+ +<a href="https://ibb.co/km1hRG">Acerca de</a><br>
+ +<a href="https://ibb.co/jFJ7tw">Foro</a><br>
+ +<a href="https://ibb.co/kknd0b">Historial de quejas</a><br>
+ +<a href="https://ibb.co/cuGctw">Quejas</a><br>
+ +<a href="https://ibb.co/nx2Htw">Sugerencias</a><br>
+ +<a href="https://ibb.co/eCqFfb">Lista de Conductores</a><br>
+ +<a href="https://ibb.co/kRDCRG">Lista de Sugerencias</a><br>
+ +<a href="https://ibb.co/kbJqDw">Registro de Sugerencias</a><br>
+ +<a href="https://ibb.co/duXp6G">Agregar foto</a><br>
+ +<a href="https://ibb.co/iCtU6G">Categoría</a><br>
+ +<a href="https://ibb.co/junNRG">Registro de Quejas</a><br>
+ +<a href="https://ibb.co/jdfntw">Ruta de la empresa</a>
+
 Y los iconos usados en el documento ICONOS.
 
 
@@ -98,11 +119,20 @@ Y los iconos usados en el documento ICONOS.
 --------------------
  + XP
  
-  
+ 
+ ***Equipos***
+ ---------------
++ Flores Horna, Renzo  ........Android
++ Garnique Sanchez, Eduardo...Página web
++ Mendoza Anhuaman, Jorge.....Página web
++ Mendoza Garcia, Diego.......Android
++ Peña Pastrana, Christine....Android
++ Trujillano Quispe, Edwin....Página web
+ 
+ 
 ***¿Como accedo al proyecto?***
 --------------------
 Si se desea observar el proyecto en acción, descargar el proyecto APP MÓVIL.
-
 
 
 **AGRADECIMIENTOS DE PLANTILLA
